@@ -39,13 +39,13 @@ def send_notification(to, subject, body, username=None, password=None, smtp_serv
     else:
         email_password = os.getenv("EMAIL_APP_PASSWORD")
     if not smtp_server is None:
-        server = smtp_server
+        email_server = smtp_server
     else:
-        server = os.getenv("GMAIL_SMTP_SERVER")
+        email_server = os.getenv("GMAIL_SMTP_SERVER")
     if not port is None:
         server_port = port
     else:
-        smtp_port = os.getenv("GMAIL_SMTP_PORT")
+        server_port = os.getenv("GMAIL_SMTP_PORT")
 
     msg = EmailMessage()
     msg.set_content(body)
@@ -53,7 +53,7 @@ def send_notification(to, subject, body, username=None, password=None, smtp_serv
     msg["from"] = email_username
     msg["to"] = to
 
-    server = smtplib.SMTP(server, smtp_port)
+    server = smtplib.SMTP(email_server, server_port)
     server.starttls()
     server.login(email_username, email_password)
     server.send_message(msg)
