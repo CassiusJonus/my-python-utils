@@ -1,7 +1,7 @@
 # Email and Text Notifier
 
 Author: Cassius Jonus
-Version: 0.0.1
+Version: 0.1
 
 ## Description
 
@@ -12,3 +12,6 @@ This package contains some utility modules that can be used in other projects. C
 ### message_notifier
 
 Allows a user to send an email or a text message including a subject and a body.
+The username and password of the sender's email account as well as the smtp
+server and port can be configured in a .env file, which will beaccessed using
+dotenv-python.
