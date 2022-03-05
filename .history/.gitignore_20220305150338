@@ -1,4 +1,4 @@
 **/.env
 .vscode/
 dist/
-src/my_utils.egg-info
+
