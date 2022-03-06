@@ -8,5 +8,3 @@ author:
     Cassius Jonus
 
 """
-
-from custom_utils.message_notifier import send_notification
