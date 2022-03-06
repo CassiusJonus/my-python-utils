@@ -5,7 +5,14 @@ import os
 import logging
 
 
-def send_notification(to, subject, body, username=None, password=None, smtp_server=None, port=None):
+def send_notification(
+        to,
+        subject,
+        body,
+        username=None,
+        password=None,
+        smtp_server=None,
+        port=None):
     """
     Send an email or text notification with the given subject and body to the given recipient.
 
@@ -26,23 +33,23 @@ def send_notification(to, subject, body, username=None, password=None, smtp_serv
         param smtp_server: str
             thethe smtp server that will be used to send the message. If no value is specified, then the value in the user's system environment is used.
         param port: int
-            the port assorted with the smtp server. This must be set if the smtp server is set, and vice versa. 
+            the port assorted with the smtp server. This must be set if the smtp server is set, and vice versa.
 
     """
     load_dotenv()
-    if not username is None:
+    if username is not None:
         email_username = username
     else:
         email_username = os.getenv("EMAIL_USERNAME")
-    if not password is None:
+    if password is not None:
         email_password = password
     else:
         email_password = os.getenv("EMAIL_APP_PASSWORD")
-    if not smtp_server is None:
+    if smtp_server is not None:
         email_server = smtp_server
     else:
         email_server = os.getenv("GMAIL_SMTP_SERVER")
-    if not port is None:
+    if port is not None:
         server_port = port
     else:
         server_port = os.getenv("GMAIL_SMTP_PORT")
