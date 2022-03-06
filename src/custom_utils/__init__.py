@@ -9,4 +9,4 @@ author:
 
 """
 
-from email_notifier.message_notifier import send_notification
+from custom_utils.message_notifier import send_notification
