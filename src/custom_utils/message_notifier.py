@@ -30,11 +30,11 @@ def send_notification(to,
             the password for the sending email account. If no value is
             specified, the value in the user's system environment is used.
         param smtp_server: str
-            The smtp server that will be used to send the message. If no value 
-            is specified, then the value in the user's system environment is 
+            The smtp server that will be used to send the message. If no value
+            is specified, then the value in the user's system environment is
             used.
         param port: int
-            the port assciated with the smtp server. This must be set if the 
+            the port assciated with the smtp server. This must be set if the
             smtp server is set, and vice versa.
 
     """
