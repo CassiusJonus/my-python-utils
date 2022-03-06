@@ -1,7 +1,4 @@
-# Email and Text Notifier
-
-Author: Cassius Jonus
-Version: 0.1.1
+# Custom Utilities
 
 ## Description
 
