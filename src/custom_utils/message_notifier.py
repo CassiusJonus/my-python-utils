@@ -34,7 +34,7 @@ def send_notification(to,
             is specified, then the value in the user's system environment is
             used.
         param port: int
-            the port assciated with the smtp server. This must be set if the
+            the port associated with the smtp server. This must be set if the
             smtp server is set, and vice versa.
 
     """
