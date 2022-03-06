@@ -5,35 +5,37 @@ import os
 import logging
 
 
-def send_notification(
-        to,
-        subject,
-        body,
-        username=None,
-        password=None,
-        smtp_server=None,
-        port=None):
+def send_notification(to,
+                      subject,
+                      body,
+                      username=None,
+                      password=None,
+                      smtp_server=None,
+                      port=None):
     """
-    Send an email or text notification with the given subject and body to the given recipient.
+    Send an email or text notification to the given recipient.
 
-    This function uses the username and password stored in a .env file for the email account from which the email or text will be sent.
+    email account from which the email or text will be sent.
 
     param to: str
-        the address of the recipient of the message
-    param subject: str
         the subject of the message (Use '' for no subject)
     param body: str
         the content of the notification message
 
     optional params:
         param username: str
-            the username for the sending email account. If no value is specified, then the value in the user's system environment is used.
+            the username for the sending email account. If no value is
+            specified, then the value in the user's system environment is used.
         param password: str
-            the password for the sending email account. If no value is specified, the value in the user's system environment is used.
+            the password for the sending email account. If no value is
+            specified, the value in the user's system environment is used.
         param smtp_server: str
-            thethe smtp server that will be used to send the message. If no value is specified, then the value in the user's system environment is used.
+            The smtp server that will be used to send the message. If no value 
+            is specified, then the value in the user's system environment is 
+            used.
         param port: int
-            the port assorted with the smtp server. This must be set if the smtp server is set, and vice versa.
+            the port assciated with the smtp server. This must be set if the 
+            smtp server is set, and vice versa.
 
     """
     load_dotenv()
