@@ -1,0 +1,21 @@
+custom\_utils package
+=====================
+
+Submodules
+----------
+
+custom\_utils.message\_notifier module
+--------------------------------------
+
+.. automodule:: custom_utils.message_notifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: custom_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
