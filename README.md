@@ -38,9 +38,3 @@ use `from custom_utils import <module_name>`.
 
 If you want to use the message_notifier module, you should use a .env file to store the credentials
 for the email account that will be sending notifications.
-
-[View Documentation](docs/build/html/index.html)
-
-## License
-
-This project uses the MIT License. The license text can be found [here](/LICENSE).
