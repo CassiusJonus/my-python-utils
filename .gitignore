@@ -12,3 +12,4 @@ src/*.egg-info
 docs/source/
 docs/Makefile
 docs/make.bat
+docs/build/doctrees/
