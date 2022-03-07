@@ -67,24 +67,4 @@ def send_notification(to,
     server.login(email_username, email_password)
     server.send_message(msg)
     server.quit()
-
-
-def test():
-    logging_level = logging.WARNING
-    app_logger = logging.getLogger(__name__)
-    app_logger.setLevel(logging_level)
-    load_dotenv()
-    try:
-        send_notification("7084751390@tmomail.net",
-                          "Test Message", "Hello phone!")
-        print("Message sent successfully")
-        send_notification("vegetafan5@gmail.com",
-                          "Test Message", "Hello email!!")
-        print("Message sent successfully")
-    except Exception:
-        app_logger.exception(
-            "An error occurred while trying to send the message.")
-
-
-if __name__ == "__main__":
-    test()
+    
