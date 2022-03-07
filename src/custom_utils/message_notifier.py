@@ -67,4 +67,3 @@ def send_notification(to,
     server.login(email_username, email_password)
     server.send_message(msg)
     server.quit()
-    
